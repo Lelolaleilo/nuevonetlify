@@ -1,0 +1,28 @@
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: steelblue;
+}
+hr {
+    border: 0 none #000000;
+    border-top: 1px solid #000000;
+    height: 1px;
+    margin: 5px 0;
+    display: block;
+    clear: both;
+    }
+    ul{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    }
+    .link{
+        color: red;
+      text-decoration: none;
+      
+    }
+
+    span{
+        border-image: initial; border: 1px solid crimson;
+        background-color: chartreuse;
+    }
