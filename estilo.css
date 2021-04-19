@@ -2,13 +2,27 @@
     margin:0%;
     padding: 0%;
     font-family: solid Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
 }
 
 body{
-     background-image: radial-gradient(circle at 50% -20.71%, #e8a138 0, #ee9637 8.33%, #f38a38 16.67%, #f77d3a 25%, #f96d3d 33.33%, #fa5b41 41.67%, #f94646 50%, #f72b4d 58.33%, #f40055 66.67%, #ef005f 75%, #e9006b 83.33%, #e20078 91.67%, #d80086 100%);
+    background-image: radial-gradient(circle at 50% -20.71%, #e8a138 0, #ee9637 8.33%, #f38a38 16.67%, #f77d3a 25%, #f96d3d 33.33%, #fa5b41 41.67%, #f94646 50%, #f72b4d 58.33%, #f40055 66.67%, #ef005f 75%, #e9006b 83.33%, #e20078 91.67%, #d80086 100%);
     color:  black;
     margin: auto;
+}
+#link{
+text-align: center;
+margin-top: 30px;
+
+}
+#link2{
+    background-color:transparent;
+  color:white;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border-image: initial; border: 2px solid whitesmoke;
+
 }
 
 #contenedor{
