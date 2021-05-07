@@ -1,20 +1,35 @@
 *{
     margin: 0;
     padding: 0;
+
+
 }
 
-
+html{
+    background: url(fondo.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 header{
-    background-color: steelblue;
-width: 70%;
+    background-color: rgba(255, 255, 255, 0.3);
+
 max-width: 1000px;
-margin: 1% auto;
-border-radius: 2em;
-box-shadow: 8px 8px 20px gray;
+margin: 1px auto;
+box-shadow: 5px 5px 30px black;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-
+.bt-menu{
+    background-color: rgba(0,0,0,0.3);
+    
+    
+}
+.bt-menu a{
+    display: none;
+    height: 20px;
+}
 header ul{
 list-style: none;
 text-align: center;
@@ -26,23 +41,26 @@ ul li{
     display: inline-block;
     position: relative;
     text-decoration: none;
-    padding: 10px;
+   
 }
 
-a{
+a {
+    display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px;
+  padding: 20px ; 
     text-decoration: none;
-    background:  steelblue;
+
     color: whitesmoke;
     transition: all 500ms ease;
+ 
+   
 }
 a:hover{
 
-    background-color: rgb(85, 154, 211);
+    background-color: rgb(0,0,0,0.2);
 }
 .contenido{
-    width: 60%;
+    width: 80%;
     margin: 10% auto;
     background-color: rgb(237, 237, 237);
     box-shadow: 5px 5px 30px black;
@@ -77,3 +95,61 @@ a:hover{
     transform: scale(1.1);
 border-color: rgba(0,0,0,0.3);
 }
+@media (max-width:600px) {
+    .bt-menu{
+
+        width: 100%;
+        background-color: rgba(0,0,0,0.3);
+       
+        position: fixed;
+        top: 0;
+    }
+    .bt-menu a{
+        display: block;
+    }
+    .link{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        color: white;
+        line-height: 40px;
+      
+       display:block ;
+    }
+
+    
+    nav {
+        width: 80%;
+        background-color:rgba(0,0,0,0.3);
+         position: fixed;
+         top: 60px;
+        text-align: left;
+         height: 70%;
+         left: -80%;
+        
+    }
+    nav ul li{
+        display: block;
+        height: 55px;
+        border-top: solid rgba(255,255,255,0.3);
+        transition: all 500ms ease;
+        
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: sans-serif;
+        padding: 20px;
+        display: block;
+        transition: all 500ms ease;
+     
+    }
+    nav ul li a:hover{
+     background-color:  rgba(0,0,0,0.3);
+    }
+    .contenido{
+        margin-top: 6em;
+    }
+    }
+    
+    
+    
