@@ -11,7 +11,7 @@ if(contador==1){
     contador=0;
 }else{
     $('nav').animate({
-        left:'-400' 
+        left:'-500' 
         
 });
 contador=1;
