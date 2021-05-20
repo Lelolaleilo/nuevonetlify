@@ -6,7 +6,7 @@ function scrollUp(){
 
     if (currentScroll > 0){
         window.requestAnimationFrame(scrollUp);
-        window.scrollTo (0, currentScroll - (currentScroll / 10));
+        window.scrollTo (0, currentScroll - (currentScroll / 6));
     }
 }
 
@@ -28,7 +28,7 @@ window.onscroll = function(){
  
 
 $('ul a').click(function(e){
-    var time=100
+    var time=300
     e.preventDefault();		//evitar el eventos del enlace normal
     var strAncla=$(this).attr('href'); //id del ancla
         $('body,html').stop(true,true).animate({				
