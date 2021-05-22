@@ -87,7 +87,7 @@ a:hover{
     bottom: 20px;
     right: 20px;
     cursor: pointer;
-    border: solid transparent;
+    border: solid 2px transparent;
     transition: all 300ms ease;
     transform: scale(0);
 }
