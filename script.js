@@ -28,7 +28,7 @@ window.onscroll = function(){
  
 
 $('ul a').click(function(e){
-    var time=300
+    var time=500
     e.preventDefault();		//evitar el eventos del enlace normal
     var strAncla=$(this).attr('href'); //id del ancla
         $('body,html').stop(true,true).animate({				
