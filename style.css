@@ -94,7 +94,7 @@ a:hover{
 border-color: rgba(0,0,0,0.3);
 }
 @media (max-width:600px) {
-  .bt-menu{
+ .bt-menu{
 
         width: 100%;
         background-color: rgba(0,0,0,0.3);
@@ -125,26 +125,27 @@ border-color: rgba(0,0,0,0.3);
          left: -80%;
         
     }
-
-  .lnk {
+    nav ul li{
+        display: block;
+        height: 55px;
+        border-top: solid rgba(255,255,255,0.3);
+        transition: all 500ms ease;
+        
+    }
+    nav ul li a {
         text-decoration: none;
         color: white;
         font-family: sans-serif;
         padding: 20px;
         display: block;
-        -webkit-transition: all 500ms ease;
-        -o-transition: all 500ms ease;
         transition: all 500ms ease;
      
     }
-    .lnk:hover{
+    nav ul li a:hover{
      background-color:  rgba(0,0,0,0.3);
     }
     .contenido{
         margin-top: 6em;
     }
     }
-    
-    
-    
     
