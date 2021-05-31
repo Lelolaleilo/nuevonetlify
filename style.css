@@ -1,13 +1,23 @@
-*{
- box-sizing: border-box;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+::root{
+   --fondo: steelblue
 }
 
 html{
+    
     background: url(fondo.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 header{
@@ -15,7 +25,8 @@ header{
 
 max-width: 1000px;
 margin: 1px auto;
-box-shadow: 5px 5px 30px black;
+-webkit-box-shadow: 5px 5px 30px black;
+        box-shadow: 5px 5px 30px black;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
@@ -49,6 +60,8 @@ a {
     text-decoration: none;
 
     color: whitesmoke;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
     transition: all 500ms ease;
  
    
@@ -61,7 +74,8 @@ a:hover{
     width: 80%;
     margin: 10% auto;
     background-color: rgb(237, 237, 237);
-    box-shadow: 5px 5px 30px black;
+    -webkit-box-shadow: 5px 5px 30px black;
+            box-shadow: 5px 5px 30px black;
     border-radius: 0.5em;
 }
 .texto{
@@ -71,13 +85,19 @@ a:hover{
 /*boton de ir arriba*/
 
 
-#button-up{
+.button-up{
         width: 60px;
         height: 60px;
-      background:rgba(0,0,0,0.3);
+    background:rgba(0,0,0,0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 20em;
     color: whitesmoke;
     font-size: 20px;
@@ -85,16 +105,22 @@ a:hover{
     bottom: 20px;
     right: 20px;
     cursor: pointer;
-    border: solid 2px transparent;
+    border: solid 1px transparent;
+    -webkit-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
     transition: all 300ms ease;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
 }
-#button-up:hover{
-    transform: scale(1.1);
+.button-up:hover{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 border-color: rgba(0,0,0,0.3);
 }
 @media (max-width:600px) {
- .bt-menu{
+    .bt-menu{
 
         width: 100%;
         background-color: rgba(0,0,0,0.3);
@@ -104,7 +130,6 @@ border-color: rgba(0,0,0,0.3);
     }
     .bt-menu a{
         display: block;
-       height: 20px;
     }
     .link{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
